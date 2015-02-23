@@ -34,7 +34,7 @@
                 
             </Grid.RowDefinitions>
             <Border Grid.Row="0" Background="Gray" >
-                <TextBox x:Name="textout" Text="0" FontSize="60" Grid.Row="0"  TextAlignment="Right" VerticalAlignment="Center" Background="Gray" BorderBrush="Transparent"/>
+                <TextBox x:Name="textout" FontSize="60" Grid.Row="0"  TextAlignment="Right" VerticalAlignment="Center" Background="Gray" BorderBrush="Transparent"/>
             </Border>
             <Grid Grid.Row="1">
                 <Grid.ColumnDefinitions>
@@ -74,9 +74,9 @@
                 <Button x:Name="bt2" Grid.Column="1" Grid.Row="2" Content="2" Background="#262639" Click="bt2_Click"/>
                 <Button x:Name="bt3" Grid.Column="2" Grid.Row="2" Content="3" Background="#262639" Click="bt03_Click"/>
                 <Button x:Name="mult" Grid.Column="3" Grid.Row="2" Content="*" Background="Gray" Click="mult_click"/>
-                <Button x:Name="point" Grid.Column="0" Grid.Row="3" Content="." Background="Gray" />
+                <Button x:Name="point" Grid.Column="0" Grid.Row="3" Content="." Background="Gray" Click="Point_click" />
                 <Button x:Name="bt0" Grid.Column="1" Grid.Row="3" Content="0" Background="#262639" Click="bt9_Click"/>
-                <Button x:Name="equal" Grid.Column="2" Grid.Row="3" Content="=" Background="Gray"/>
+                <Button x:Name="equal" Grid.Column="2" Grid.Row="3" Content="=" Background="Gray" Click="igual_click"/>
                 <Button x:Name="div" Grid.Column="3" Grid.Row="3" Content="/" Background="Gray" Click="div_click"/>
             </Grid>
             </Grid>

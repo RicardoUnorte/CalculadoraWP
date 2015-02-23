@@ -126,6 +126,7 @@ namespace Calculadora
             Button bt = (Button)(e.OriginalSource);
             signo = Convert.ToString(bt.Content);
             sw = true;
+            dec = false;
         }
         private void menos_click(object sender, RoutedEventArgs e)
         {
@@ -133,6 +134,7 @@ namespace Calculadora
             Button bt = (Button)(e.OriginalSource);
             signo = Convert.ToString(bt.Content);
             sw = true;
+            dec = false;
         }
         private void mult_click(object sender, RoutedEventArgs e)
         {
@@ -140,6 +142,7 @@ namespace Calculadora
             Button bt = (Button)(e.OriginalSource);
             signo = Convert.ToString(bt.Content);
             sw = true;
+            dec = false;
         }
         private void div_click(object sender, RoutedEventArgs e)
         {
@@ -147,6 +150,7 @@ namespace Calculadora
             Button bt = (Button)(e.OriginalSource);
             signo = Convert.ToString(bt.Content);
             sw = true;
+            dec = false;
         }
         private void igual_click(object sender, RoutedEventArgs e)
         {
@@ -155,6 +159,7 @@ namespace Calculadora
             Double result = Calcular(signo, num1, num2);
             textout.Text = Convert.ToString(result);
             dec = false;
+            
             
         }
 
@@ -208,6 +213,7 @@ namespace Calculadora
                         r= n1 / n2;
                         break;
                 }
+                
 
                 return r;
             }
